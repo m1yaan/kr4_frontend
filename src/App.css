@@ -15,9 +15,9 @@
 
 .App {
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--color-light), #e9ecef);
+  background: linear-gradient(135deg, #2c3e50, #1a252f);
+  color: white;
 }
-
 .main-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -498,4 +498,112 @@
   .stats-grid {
     grid-template-columns: 1fr;
   }
+}
+.page,
+.page-header,
+.page-header h1,
+.dashboard,
+.stats-overview,
+.stat-card,
+.stat-card h3,
+.quick-actions,
+.quick-actions h3,
+.recent-technologies,
+.recent-technologies h2,
+.technology-card-mini,
+.technology-card-mini h4,
+.technology-card-mini p,
+.view-details,
+.greeting,
+.greeting h2,
+.greeting p,
+.counter,
+.counter h2,
+.counter p,
+.registration-form,
+.registration-form h2,
+.form-group,
+.form-group label,
+.color-picker,
+.color-picker h2,
+.color-controls,
+.color-controls h3,
+.window-tracker,
+.window-tracker h2,
+.size-info,
+.size-info p,
+.user-profile,
+.user-profile h2,
+.user-info,
+.user-info p,
+.contact-form,
+.contact-form h2,
+.user-list,
+.user-list h2,
+.user-card,
+.user-card h3,
+.user-card p,
+.product-search,
+.product-search h2,
+.search-box,
+.search-results,
+.post-list,
+.post-list h2,
+.post-card,
+.post-card h3,
+.post-card p {
+  color: #333333 !important;
+}
+
+/* Убедимся, что кнопки и интерактивные элементы видны */
+.button:not(.button--primary):not(.nav-link) {
+  color: #333333 !important;
+  border: 1px solid #667eea;
+}
+
+/* Статусные бейджи */
+.status-badge {
+  color: white !important;
+}
+
+/* Прогресс-бар */
+.progress-bar-header,
+.progress-label,
+.progress-percentage {
+  color: #333333 !important;
+}
+
+/* Формы */
+input, textarea, select {
+  color: #333333 !important;
+  background: white !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #666 !important;
+}
+
+/* Таблицы и списки */
+.user-card p strong,
+.size-info p strong {
+  color: #333333 !important;
+}
+
+/* Компоненты из практических занятий */
+.components-grid > * {
+  color: #333333 !important;
+}
+
+/* Сохраняем белый текст в навигации и футере */
+.navigation,
+.navigation *,
+.footer,
+.footer * {
+  color: white !important;
+}
+
+.nav-link,
+.footer__link {
+  color: white !important;
 }
