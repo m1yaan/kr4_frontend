@@ -1,0 +1,138 @@
+.technology-card {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  margin: var(--space-sm) 0;
+  box-shadow: var(--shadow);
+  border-left: 4px solid #ff6b6b;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.technology-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.technology-card.status-in-progress {
+  border-left-color: #4ecdc4;
+}
+
+.technology-card.status-completed {
+  border-left-color: #45b7d1;
+}
+
+.technology-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-sm);
+}
+
+.technology-card__title {
+  margin: 0;
+  color: var(--color-dark);
+  font-size: 1.2rem;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-not-started {
+  background: #ff6b6b;
+  color: white;
+}
+
+.status-in-progress {
+  background: #4ecdc4;
+  color: white;
+}
+
+.status-completed {
+  background: #45b7d1;
+  color: white;
+}
+
+.technology-card__description {
+  color: var(--color-text);
+  margin-bottom: var(--space-sm);
+  line-height: 1.5;
+}
+
+.technology-card__meta {
+  display: flex;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.technology-category,
+.technology-difficulty {
+  padding: 0.25rem 0.5rem;
+  background: var(--color-light);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--color-dark);
+}
+
+.technology-card__actions {
+  margin-bottom: var(--space-sm);
+}
+
+.notes-toggle {
+  background: transparent;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.notes-toggle:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.technology-card__notes {
+  margin-top: var(--space-sm);
+}
+
+.technology-card__notes textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e9ecef;
+  border-radius: var(--radius);
+  font-family: inherit;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.technology-card__resources {
+  margin-top: var(--space-sm);
+  padding-top: var(--space-sm);
+  border-top: 1px solid var(--color-light);
+}
+
+.technology-card__resources ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.technology-card__resources li {
+  margin-bottom: 0.25rem;
+}
+
+.technology-card__resources a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.technology-card__resources a:hover {
+  text-decoration: underline;
+}
